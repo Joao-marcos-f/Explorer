@@ -29,5 +29,5 @@ main > h1,p{
 main>a{
     text-decoration: underline;
     color: white;
-    
+    display: block; 
 }

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-image: url(imagens/blob-scene-haikei.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    width: 650px;
+    padding: 8px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.24); 
+}
+main > h1,p{
+    margin-bottom: 40px;
+}
+main>a{
+    text-decoration: underline;
+    color: white;
+    
+}

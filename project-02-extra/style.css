@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "JetBrains Mono", monospace;
+    background: #2C2B3D;
+}
+div#page{
+    width: 1280px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:71px auto 101px ;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 64px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 157px;
+}
+section#text{
+text-align: center;
+}
+section#text h1{
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 59px;
+}
+span{
+    color:#00BFA6;
+}
+p{
+    color:#C2C2C2 ;
+    font-family: "Open Sans", sans-serif;
+}
+footer{
+    text-align: center;
+}
+footer p{
+    font-family: "JetBrains Mono", monospace;
+    margin-top: 27px; 
+}
+div#line{
+    margin: 0 auto 8px;
+    width: 568px;
+    height: 0;
+    border: 1px solid #00BFA6;
+}
+img#cadeado{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mentoria</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+        <form id="form-mentoria">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações pessoais</legend>
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="mentoria-name">Nome</label>
+                            <input type="text" id="mentoria-name" required>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="mentoria-sobrenome">Sobrenome</label>
+                            <input type="text" id="mentoria-sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentoria-email">E-mail <span>(digite um email válido)</span></label>
+                        <input type="email" id="mentoria-email" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentoria-password">Senha <span>(mínimo de 8 caracteres)</span></label>
+                        <input type="password" id="mentoria-password" required minlength="8">
+                    </div>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="name-mentor">Nome <span>(só o primeiro nome)</span></label>
+                        <input type="text" id="name-mentor" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Seus horários disponíveis</legend>
+                    <h1>primeira mentoria</h1>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="mentoria-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="mentoria-date" required>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="mentoria-start">Das</label>
+                            <input type="time" id="mentoria-start" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentoria-end">Até</label>
+                            <input type="time" id="mentoria-end" required>
+                        </div>
+                    </div>
+
+                    <h1>segunda mentoria</h1>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="mentoria-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="mentoria-date" required>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="mentoria-start">Das</label>
+                            <input type="time" id="mentoria-start" required >
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentoria-end">Até</label>
+                            <input type="time" id="mentoria-end"required>
+                        </div>
+                    </div>
+                    
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <input class="button" type="submit" value="Salvar" form="form-mentoria" >
+        </footer>
+    </div>
+</body>
+</html>

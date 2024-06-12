@@ -7,6 +7,63 @@
     <title>Formulario de avaliação de mentoria</title>
 </head>
 <body>
+    <div id="page">
+        <header>
+            <h1>avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="image/img1.png" alt="balão da cor vermelha com tres de 5 estrelas brancas preenchidas"> 
+        </header>
+        <div id="form-header">
+            <h1>informações pessoais</h1>
+        </div>
+        <form>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="col-2">
+
+                        <div class="input-wrapper">
+                            <label for="mentoria-name">Nome</label>
+                            <input type="text" id="mentoria-name" required>
+                        </div>
     
+                        <div class="input-wrapper">
+                            <label for="mentoria-sobrenome">Sobrenome</label>
+                            <input type="text" id="mentoria-sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentoria-email">E-mail <span>(digite um email válido)</span></label>
+                        <input type="email" id="mentoria-email" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>informações do mentor</legend>
+
+                    <div class="input-wrapper">
+                        <label for="mentor-name">Selecione o nome do seu mentor</label>
+                        <select name="mentor-category" id="mentor-category">
+                            <option value="joao">João</option>
+                            <option value="marcos">Marcos</option>
+                            <option value="ferreira">Ferreira</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentoria-sobrenome">Feedback sobre o mentor</label>
+                        <textarea name="mentor-feedback" id="mentor-feedback"></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="no-question">
+                        <label for="no-question">Todas as minhas dúvidas foram esclarecidas durante a mentoria </label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

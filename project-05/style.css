@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+body{
+    font-family: "Source Serif 4", serif;
+    font-size: 1.6rem;
+
+    background: color#FFFFFF url(image/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.jpg) no-repeat;
+
+    color: #A54328;
+}
+main{
+    max-width: 32rem;
+
+    margin-inline: auto;
+
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    gap:3.2rem ;
+}
+h1,h2{
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+}
+img{
+    width: 100%;
+    margin-block: 3.2rem;
+}
+h2{
+    text-decoration: underline;
+}
+p,li,strong{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+button{
+    background-color: #A54328;
+    color: white;
+
+    border: 0;
+
+    padding: .8rem 1.2rem;
+
+    border-radius: .6rem;
+
+    margin-top: 3.2rem;
+}
+ul, ol{
+    padding-left: 2.4rem
+}
+ul{
+    margin-bottom: 2.4rem;
+}
+@media(min-width:1220px){
+    main{
+        margin-top: 9rem;
+        flex-direction: row;
+        max-width: fit-content;
+        gap: 16rem;
+
+        padding: 9rem 6rem;
+    }
+   div#apresentacao{
+    max-width: 43.5rem;
+   }
+   div#modo_de_preparo{
+    max-width: 52.5rem;
+   }
+   h1,h2{
+    font-size: 4rem;
+    line-height: 5rem;
+   }
+   p,li,strong{
+    font-size: 2rem;
+    line-height: 2.5rem;
+   }
+   button{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+   }
+}

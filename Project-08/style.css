@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+
+    font-family: "Mulish", sans-serif;
+
+    --color-base-white:#FFFFFF;
+    --color-base-white-100:#F4FCFF;
+    --color-base-blue-100:#387E96;
+    --color-base-blue-300:#065E7C;
+    --color-base-black-100:#202024;
+    --color-base-black-300:#121214;
+}
+html, body{
+    font-family: "Mulish", sans-serif;
+    overflow-x: hidden;
+}
+header{ 
+    background: var(--color-base-blue-300);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3rem;
+    padding:1.2rem 2.8rem ;
+}
+.avatar{
+    width: 4.2rem;
+    height: 4.2rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+form label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+form input{
+    width: 100%;
+    padding: 1.6rem;
+
+    background-color: #ffffff63;
+    border: 0;
+    border-radius: .6rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    font-family: "Mulish", sans-serif;
+
+    color: white;
+}
+form input::placeholder{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-base-white);
+}
+main{
+    width: 100vw;
+}
+main > img{
+    width: 100%;
+}
+
+.content, aside{
+    width: 90vw;
+    margin: 3.1rem auto;
+}
+h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 160%;
+
+    color: var(--color-base-black-100);
+}
+.like-buttons{
+    margin-top: .8rem;
+    margin-bottom: 3.1rem;
+    display: flex;
+    gap: 1.2rem;
+}
+.like_button{
+    width: 4.5rem;
+    height: 4.5rem;
+
+    border: none;
+    border-radius: 50%;
+    
+    background: var(--color-base-blue-300);
+    color: var(--color-base-white);
+}
+.like_button:hover{
+    background-color: var(--color-base-blue-100);
+    cursor: pointer;
+}
+.content p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 160%;
+
+    color:var(--color-base-black-300) ;
+}
+.card-wrapper{
+    display: flex;
+    gap:1.6rem ;
+
+    margin: 3.2rem auto ;
+}
+.descrption h2{
+    font-size: 1.8rem;
+    line-height: 160%;
+    font-weight: 700;
+}
+.descrption p{
+    font-size: 1.4rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+footer{
+   
+    text-align: center;
+    padding:1.6rem 2.6rem;
+    background: var(--color-base-blue-100);
+    color: var(--color-base-white);
+
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+@media(min-width:950px){
+
+    .desktop_version{
+        display: flex;
+    }
+    main{
+        max-width: 80.3rem;
+        padding:4.4rem 0 0 10.9rem;
+        
+    }
+    .content{
+        width: fit-content;
+    }
+    #app aside{
+        width:38rem ;
+
+    }
+    
+}

@@ -16,4 +16,6 @@ const multi = fistNumber * secondNumber
 const div = fistNumber / secondNumber
 const rest = fistNumber % secondNumber
 
+
+
 alert(`a soma deu ${sum} a subtração deu ${sub} a multiplicação deu ${multi} a divisao deu ${div}`)

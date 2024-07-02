@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+
+    --color-base-white:#F9F4FB;
+    --color-base-pink:#B52184;
+    --color-base-purple:#312D64;
+}
+html,body, #app{
+    font-family: "Mulish", sans-serif;
+}
+header > img{
+    display: block;
+    margin:  0 auto ;
+}
+#headertext{
+    margin-top: 2.4rem;
+    text-align: center;
+}
+#headertext h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+
+    color: var(--color-base-pink);
+}
+#headertext p{
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--color-base-purple);
+}
+#headertext img{
+    margin-top: 3.5rem;
+}
+main{
+    padding: 5.2rem 0rem ;
+    background: linear-gradient(90deg, #343193,#302C63);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.card-wrapper{
+    width: 80vw;
+    
+    padding: 2.6rem;
+
+    background: #FFFFFF;
+
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.card-wrapper h2{
+    margin:  2rem 0;
+    
+    font-size: 3rem;
+    font-weight: 900;
+
+    color: var(--color-base-pink);
+}
+.card-wrapper p{
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    color: var(--color-base-purple);
+}
+div#formImage{
+    display: none;
+}
+form{
+    margin: 7.8rem auto;
+}
+fieldset{
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    width: 80%;
+
+    margin: 0 auto;
+}
+fieldset h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+
+    color: var(--color-base-pink);
+}
+fieldset input{
+    border: 1.5px solid var(--color-base-purple);
+    border-radius:1.6rem ;
+
+    min-height: 4.8rem;
+}
+input[type="text"] {
+    background-image: url(image/person-icon.svg);
+    background-position: 1rem 1.2rem;
+    background-repeat: no-repeat;
+    padding-left: 4rem; 
+  }
+  
+  input[type="email"] {
+    background-image: url(image/at-icon.svg);
+    background-position: 1rem 1rem ;
+    background-repeat: no-repeat;
+    padding-left: 4rem; 
+}
+input::placeholder,
+textarea::placeholder{
+    font-family: 'mulish' , sans-serif;
+    color: var(--color-base-purple);
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+textarea{
+    min-height: 12rem;
+    
+    border-radius: 1.6rem;
+
+    padding-left: 1.6rem;
+    padding-top: 1.2rem;
+
+    border: 1.5px solid var(--color-base-purple);
+}
+input[type="button"]{
+    background: linear-gradient(90deg, #343193,#302C63 );
+    color: #FFFFFF;
+
+    font-size:1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-family: 'mulish' , sans-serif;
+
+    width:15rem ;
+}
+input[type="button"]:hover{
+    background: linear-gradient(90deg, #292774,#201d42 );
+}
+
+div#footerOffooter{
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(90deg, #343193,#302C63);
+
+    padding: 3.2rem 0;
+}
+div#footerOffooter p{
+    font-size:2rem ;
+    font-weight: 600;
+}
+
+@media(min-width:750px){
+    header{
+        display: flex;
+        padding: 0 2.8rem;
+        margin-bottom: 10rem;
+    }
+    #headertext{
+        margin: 0 auto;
+        padding-top: 10rem;
+    }
+    #headertext img{
+        max-height: 5rem;
+        margin-left:15rem;
+        margin-top:10rem;
+    }
+    main{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5.2rem;
+        
+    }
+    .card-wrapper{
+        max-width:30rem;
+    }
+    div#formImage{
+        display: block;
+        
+    }
+    div#containerFooter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:9rem;
+        overflow: hidden;
+        margin-left: 2rem;
+    }
+    form{
+        min-width: 32rem;
+        width: 100%;
+        max-width: 65rem;
+    }
+
+}

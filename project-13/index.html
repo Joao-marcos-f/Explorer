@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,13 @@
     <link rel="shortcut icon" href="images/favincon.svg" type="image/x-svg">
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="JS/main.js" defer></script>
 </head>
 <body>
 
     <div id="app">
         <button id="toogle-mode">
-            <!--<span>atiar/desativar light mode</span>-->
+            <span class="sr-only">ativar/desativar light mode</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
@@ -27,15 +28,26 @@
         </section>
 
         <section id="controls" class="flex">
-            <button class="ph ph-play-circle"></button>
-            <button class="ph ph-pause-circle"></button>
-            <button class="ph ph-timer secondary"></button>
-            <button class="ph ph-stop-circle "></button>
-            <button class="ph ph-speaker-high "></button>
-            <button class="ph ph-speaker-none secondary"></button>
+            <button class="ph ph-play-circle" data-action="toogleRunning">
+                <span class="sr-only">iniciar contador</span>
+            </button>
+            <button class="ph ph-pause-circle" data-action="toogleRunning">
+                <span class="sr-only">pausar contador</span>
+            </button>
+            <button class="ph ph-timer secondary" data-action="set">
+                <span class="sr-only">ajustar contador</span>
+            </button>
+            <button class="ph ph-stop-circle" data-action="reset">
+                <span class="sr-only">reiniciar contador</span>
+            </button>
+            <button class="ph ph-speaker-high" data-action="toogleMusic">
+                <span class="sr-only">ativar volume do alarme</span>
+            </button>
+            <button class="ph ph-speaker-none secondary" data-action="toogleMusic">
+                <span class="sr-only">desativar volume do alarme</span>
+            </button>
         </section>
     </div>
 
- <script src="./JS/main.js"></script>
 </body>
 </html>

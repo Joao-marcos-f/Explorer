@@ -1,12 +1,31 @@
 import state from "./state.js";
 import * as el from './elements.js'
+import { reset } from "./actions.js";
+import { kichenTimer } from "./sounds.js";
 
 export function countdowm(){
+    clearTimeout(state.countdowmId)
+    
     if(!state.isRunning){
         return
     }
-    console.log('iniciou')
-    setTimeout(() => countdowm(),1000)
+    
+    let minutes = Number(el.minutes.textContent)
+    let seconds = Number(el.seconds.textContent)
+
+    seconds--
+
+    if(seconds < 0){
+        seconds = 59
+        minutes--
+    }
+    if(minutes < 0){
+        reset()
+        kichenTimer.play()
+        return
+    }
+    updateDisplay(minutes,seconds)
+    state.countdowmId = setTimeout(() => countdowm(),1000)
 }
 export function updateDisplay(minutes, seconds){
     minutes = minutes ?? state.minutes

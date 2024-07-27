@@ -15,10 +15,15 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+body, h3{
     font-family: "Epilogue", sans-serif;
 }
-
+.desktop-nav-version,.welcome-image{
+    display: none;
+}
+p:nth-of-type(2) {
+    display: none;
+}
 nav{
     background-color: var(--bg-white);
 
@@ -71,6 +76,36 @@ main{
     font-size: 1.6rem;
     font-weight: 600;
 }
+.techsused{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap:3.6rem;
+    padding-top: 2.8rem;
+}
+.techsCard{
+    color: var(--bg-black);
+    font-size: 1.6rem;
+    line-height: 130%;
+
+    width: 20rem;
+
+    border-radius: 1rem;
+
+    padding: 2rem;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.2s;
+}
+.techsCard h3{
+    font-weight: 400;
+}
+.techsCard:hover, .linkCard:hover{
+    transform: scale(1.05); 
+}
 .about-me{
     text-align: center;
 
@@ -79,9 +114,12 @@ main{
     font-size: 1.6rem;
 
     min-height: 37rem;
+
+    display: flex;
+    gap: 2rem;
 }
 .about-me-text{
-    max-width: 80vw;
+    width: 80vw;
     margin:0 auto;
     padding-top: 5rem
 }
@@ -94,6 +132,19 @@ main{
     justify-content: center;
     align-items: center;
     gap:9rem ;
+}
+.my-photo{
+    display: none;
+    background: url(imagens/Foto\ de\ perfil\ para\ linkedin\ redondo\ simples\ degradê\ preto\ e\ azul\ escuro.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 316px;
+
+    width: 26.2rem;
+    height: 25.3rem;
+
+    margin: auto;
 }
 .line{
     width: 30vw;
@@ -113,7 +164,7 @@ main{
 .projects-links{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    grid-gap: 3rem;
     padding: 3rem 0;
 }
 .projects-links a{
@@ -131,4 +182,73 @@ footer p{
     font-weight: 700;
     line-height: 132%;
     padding: 3rem 0;
+}
+@media (min-width:1280px){
+    .desktop-nav-version,.welcome-image,.mobile-welcome{
+        display: flex;
+    }
+    li:nth-child(1),li:nth-child(3),li:nth-child(5){
+        display: none;
+    }
+    ul li a{
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        color: var(--bg-black);
+    }
+    ul li a:hover{
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+    .mobile-welcome{
+        justify-content: center;
+        background: none;
+        padding: 0;
+        height:60rem;
+    }
+    .welcome-image{
+        background: url(imagens/sapiens.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width:60rem;
+    }
+    .welcome-text{
+        color: var(--bg-black);
+        margin: 0;
+        padding-top: 25rem;
+    }
+    p:nth-of-type(2) {
+        display: block;
+    }
+    .techsused{
+        display: flex;
+    }
+    .my-photo{
+        display: block;
+    }
+    .about-me-text{
+        width: 60vw;
+    }
+    .linkCard{
+        color: var(--bg-black);
+        font-size: 1.6rem;
+        line-height: 130%;
+        
+        width: 20rem;
+        
+        border-radius: 1rem;
+
+        padding: 2rem;
+
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        transition: transform 0.2s;
+    }
+    .projects-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
 }

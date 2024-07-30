@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size:62.5%
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: transparent;
+
+    position: fixed;
+    width: 100%;
+    padding: 2rem;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    gap: 2rem;
+    
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+ul li a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.Home{
+    overflow: hidden;
+
+    height: 100dvh;
+
+    background: url(assets/images/mountains-universe-1.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: grid;
+    place-content: center;
+
+    text-align: center;
+}
+.Home h1, .universe h1, .exploration h1{
+    color: #E1E1E6;
+    font-size: 4.8rem;
+    line-height: 125%;
+
+    margin-bottom: 2.4rem;
+}
+.Home a{
+    border:  solid 2px #E1E1E6;
+    border-radius: 5px;
+
+    color: #E1E1E6;
+
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    padding: 1.2rem 3.2rem;
+   
+    margin: 0 auto;
+}
+.Home a:hover{
+    background: #E1E1E6;
+    color:#02799D ;
+}
+.universe, .exploration{
+    background: url(assets/images/mountains-universe02.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    height: 100dvh;
+    padding: 18.5rem 10.2rem;
+}
+.universe p, .exploration p{
+    font-size: 1.8rem;
+    color: #E1E1E6;
+    line-height: 160%;
+
+    max-width: 64.8rem;
+}
+.exploration{
+    background: url(./assets/images/mountains-universe-3.png) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
